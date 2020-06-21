@@ -17,22 +17,18 @@ function start_game(args::Dict)
 end
 
 function server_handler(request::HTTP.Request, args::Dict, get_action::Function)
-    println("handler")
-    path = HTTP.URIs.splitpath(request.target)
-    println(path[1])
     # path is either an array containing "update" or nothing
-    if path[1] == "/update"
+    if occursin("update", request.target)
         println("Game done.")
         content = JSON.parse(String(request.body))
 
         # webhook to start new game in existing set of games
         if "webhook" in keys(content)
             # A webhook was sent to the agent to start a new game in the current set of games.
-            println(webhookUrl)
             webhook_url = string(breezy_ip(args), content["webhook"])
             # call webhook to trigger new game
             println("Starting a new game among the set")
-            HTTP.get(webhookUrl)
+            HTTP.get(webhook_url)
         # otherwise start new set of games, or end session
         else
             start_game(args)

@@ -42,7 +42,7 @@ while true
         HTTP.post(string(DotaBot.agent_ip(args), "/update"), ["Content-Type" => "application/json"],
                   JSON.json(Dict("status"=>"DONE")))
     else
-        features = rand(3)
+        features = rand(310)
         println(features[1])
         HTTP.post(string(DotaBot.agent_ip(args), "/"),
                   ["Content-Type" => "application/json"], JSON.json(features))
