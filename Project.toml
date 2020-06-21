@@ -1,0 +1,4 @@
+name = "DotaBot"
+uuid = "98ccd7f1-eda6-43a7-bfb8-cac7baa61320"
+authors = ["Dennis Wilson <dennis@d9w.xyz>"]
+version = "0.1.0"
