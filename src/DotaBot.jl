@@ -1,5 +1,9 @@
 module DotaBot
 
-greet() = print("Hello World!")
+using HTTP
+using Random
+using JSON
+
+include("server.jl")
 
 end # module
