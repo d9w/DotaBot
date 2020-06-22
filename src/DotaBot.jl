@@ -6,7 +6,8 @@ using JSON
 using CSV
 using DataFrames
 
+include("utils.jl")
 include("server.jl")
-include("surrogate.jl")
+include("model.jl")
 
 end # module
