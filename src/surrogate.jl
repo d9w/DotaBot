@@ -1,6 +1,7 @@
 export get_model_action
 
 function get_model_action(features::Array{Float64}, model)
+    inputs = get_inputs(features)
     rewards = zeros(Float32, 30)
     for i in eachindex(rewards)
         actions = 0:29 .== i
