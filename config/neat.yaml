@@ -1,0 +1,19 @@
+# NEAT agent settings
+n_in: 113
+n_out: 30
+d_fitness: 1
+innovation_max: 0
+p_mut_weights: 0.1
+weight_factor: 0.1
+p_mut_neurons: 0.1
+p_mutate_weights: 0.9
+p_mutate_enabled: 0.0
+p_mutate_add_neuron: 0.01
+p_mutate_add_connection: 0.3
+
+# Cambrian.jl settings
+n_population: 10
+n_elite: 1
+n_gen: 10000
+log_gen: 1
+save_gen: 1

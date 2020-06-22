@@ -1,4 +1,4 @@
-df = CSV.File("min_max_adj.csv") |> DataFrame!
+df = CSV.File("config/min_max_adj.csv") |> DataFrame!
 const MINS = Array{Float64}(df[!, :min])
 const MAXS = Array{Float64}(df[!, :adj_max])
 const DIFF = MAXS .- MINS

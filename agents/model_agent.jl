@@ -31,8 +31,11 @@ s = ArgParseSettings()
 end
 
 args = parse_args(ARGS, s)
-@load "reward_model_2.bson" cm2
 
+println("loading model")
+@load "models/reward_model_2.bson" cm2
+
+println("starting server")
 @async HTTP.serve(parse(IPAddr, args["agentIP"]), parse(Int, args["agentPort"])) do request::HTTP.Request
    @show request
    try
@@ -46,6 +49,7 @@ args = parse_args(ARGS, s)
    end
 end
 
+println("starting game")
 start_game(args)
 
 while true

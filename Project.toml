@@ -4,8 +4,16 @@ authors = ["Dennis Wilson <dennis@d9w.xyz>"]
 version = "0.1.0"
 
 [deps]
+ArgParse = "c7e460c6-2fb9-53a9-8c5b-16f535851c63"
+BSON = "fbb218c0-5317-5bc6-957e-2ee96dd4b1f0"
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+CUDAdrv = "c5f51814-7f29-56b8-a69c-e4d8f6be1fde"
+Cambrian = "7f27c84d-2d74-42e5-be5f-94f6748267f3"
+CartesianGeneticProgramming = "a58c8383-ac42-4eac-b920-efb5a098c09c"
+CuArrays = "3a865a2d-5b23-5a0f-bc46-62713ec82fae"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
 HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
 JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+NEAT = "2ec0002f-e4a1-4800-bcee-0ea66feeae55"
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
