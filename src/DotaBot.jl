@@ -5,5 +5,6 @@ using Random
 using JSON
 
 include("server.jl")
+include("surrogate.jl")
 
 end # module
