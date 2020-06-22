@@ -21,7 +21,7 @@ s = ArgParseSettings()
     default = "8086"
     "--ind"
     help = "CGP individual DNA file"
-    default = "models/cgp1.dna"
+    default = "models/best_cgp.dna"
     "--cfg"
     help = "CGP config file"
     default = "config/cgp.yaml"

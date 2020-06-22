@@ -21,7 +21,7 @@ s = ArgParseSettings()
     default = "8086"
     "--ind"
     help = "NEAT individual DNA file"
-    default = "models/neat1.dna"
+    default = "models/best_neat.dna"
     "--cfg"
     help = "NEAT config file"
     default = "config/neat.yaml"

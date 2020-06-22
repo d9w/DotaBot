@@ -33,13 +33,13 @@ end
 args = parse_args(ARGS, s)
 
 println("loading model")
-@load "models/reward_model_2.bson" cm2
+@load "models/lookahead_model.bson" cm
 
 println("starting server")
 @async HTTP.serve(parse(IPAddr, args["agentIP"]), parse(Int, args["agentPort"])) do request::HTTP.Request
    @show request
    try
-       f_act(features) = get_model_action(features, cm2)
+       f_act(features) = get_model_action(features, cm)
        response = server_handler(request, args, f_act)
        @show response
        return response
