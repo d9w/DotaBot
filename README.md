@@ -23,7 +23,7 @@ repository to a specific directory, where scripts can be launched, and then use
 Julia to add the local repository.
 
 ```bash
-$ git clone https://github.com/d9w/DotaBot.jl
+$ git clone https://github.com/d9w/DotaBot
 $ cd DotaBot.jl
 $ julia
 pkg> develop .
