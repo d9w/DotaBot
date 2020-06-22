@@ -6,7 +6,7 @@ using JSON
 using CSV
 using DataFrames
 
-include("utils.jl")
+include("util.jl")
 include("server.jl")
 include("model.jl")
 
